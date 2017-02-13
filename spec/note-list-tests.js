@@ -1,6 +1,4 @@
-(function() {
-	assert.isTrue(notelist = new NoteList());
-})();
+
 
 (function() {
 	notelist = new NoteList();
@@ -12,4 +10,3 @@
 	notelist.addNote("this is a note");
 	assert.isNotEmpty(notelist.getNotes());
 })();
-
