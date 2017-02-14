@@ -1,5 +1,3 @@
-
-
 (function(exports) {
 
 
@@ -14,5 +12,5 @@
   NoteList.prototype.GetNotes = function() {
     return this.notes;
   }
-  exports.NoteList  = NoteList();
+  exports.NoteList  = NoteList;
 })(this);

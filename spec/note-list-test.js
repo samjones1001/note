@@ -1,12 +1,14 @@
-
-
 function CheckNoteListIsEmpty() {
-  var notelist = new noteList();
+  var notelist = new NoteList();
   assert.isEmpty(notelist.GetNotes());
 };
 
+CheckNoteListIsEmpty()
+
 function CheckNoteListIsEmpty() {
-  var notelist = new noteList();
-  notelist.Add("Hello");
+  var notelist = new NoteList();
+  notelist.AddNote("Hello");
   assert.isNotEmpty(notelist.GetNotes());
 };
+
+CheckNoteListIsEmpty()
