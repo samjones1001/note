@@ -1,0 +1,22 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "note-list-model.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Justinio14/Web-Page-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Justinio14/Web-Page-challenge/issues"
+  },
+  "homepage": "https://github.com/Justinio14/Web-Page-challenge#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
