@@ -7,7 +7,7 @@
   NoteListView.prototype.display = function(){
     var output = "";
     this._listToDisplay.forEach(function(note) {
-      output += "<li>" + note._content + "</li>"
+      output += "<li>" + note._content.substring(0,20) + "...</li>"
     });
 
     return ("<ul>" + output + "</ul>");

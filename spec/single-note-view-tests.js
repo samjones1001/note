@@ -3,7 +3,7 @@
 })();
 
 (function() {
-	var note = new Note("This is a note");
-	var singleview = new SingleNoteView(note);
-	assert.isTrue(singleview.showNote === "<div>This is a note</div>")
+	note = new Note("This is a note");
+	singleview = new SingleNoteView(note);
+	assert.isTrue(singleview.showNote() === "<div>This is a note</div>")
 })();
