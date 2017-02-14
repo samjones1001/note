@@ -1,3 +1,5 @@
+'use strict';
+
 function testingNoteList(string){
   noteList = new NoteList();
   note_array = noteList.createNote(new Note(string))

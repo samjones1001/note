@@ -1,4 +1,5 @@
 
+'use strict';
 (function (exports){
 
   function NoteList() {

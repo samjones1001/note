@@ -1,10 +1,9 @@
+'use strict';
 (function(exports){
 
   function NoteListView(notelist) {
     this.view = notelist._notes
   }
-
-
 
 function returnHTMLString()  {
   var string = "";
