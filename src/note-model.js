@@ -4,11 +4,11 @@
 		this._content = noteText;
 	}
 
+	exports.Note = Note;
+
 	Note.prototype.getContent = function() {
 		return this._content;
-	}
-
-	exports.Note = Note;
+	}	
 
 })(this);
 

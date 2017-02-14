@@ -1,5 +1,3 @@
-
-
 (function() {
 	notelist = new NoteList();
 	assert.isEmpty(notelist.getNotes());
