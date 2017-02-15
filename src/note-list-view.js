@@ -8,9 +8,9 @@
     var output = "";
     this._listToDisplay.forEach(function(note) {
       if (note._content.length > 20) {
-        output += "<li>" + note._content.substring(0,20) + "...</li>";
+        output += "<li><a href='#" + note._id + "'>" + note._content.substring(0,20) + "...</a></li>";
       } else {
-        output += "<li>" + note._content + "</li>";
+        output += "<li><a href='#" + note._id + "'>" + note._content + "</a></li>";
       }
     });
     return ("<ul>" + output + "</ul>");
