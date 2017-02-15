@@ -13,7 +13,8 @@
 
 	exports.NoteController = NoteController;
 
-	makeUrlChangeShowNoteForCurrentPage()
+	makeUrlChangeShowNoteForCurrentPage();
+	listenForFormSubmit();
 
 	function makeUrlChangeShowNoteForCurrentPage() {
 		window.addEventListener("hashchange", showNoteForCurrentPage);
@@ -38,6 +39,14 @@
 			if (controller._list._notes[i]._id == id) return controller._list._notes[i] 
 		}
 	}
+
+	function listenForFormSubmit() {
+		document.getElementById('text').addEventListener("submit", function(submitEvent) {
+			submitEvent.preventDefault();
+		});
+	}
+
+
 
 })(this);
 
