@@ -2,9 +2,9 @@
 
 
 
-  function NoteController(newlist = new NoteList()) {
+  function NoteController(newlist = new NoteList) {
     this._newList = newlist;
-    this._newListed = this._newList.AddNote("Iron Bru");
+    // this._newListed = this._newList.AddNote("Favourite drink: Fanta");
     this._view = new NoteView(newlist);
   }
 
