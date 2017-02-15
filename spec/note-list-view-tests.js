@@ -6,7 +6,7 @@
   notelist.addNote("more nonsense");
   notelistview = new NoteListView(notelist);
 
-	assert.isTrue(notelistview.display() === "<ul><li>any old nonsense...</li><li>more nonsense...</li></ul>");
+	assert.isTrue(notelistview.display() === "<ul><li>any old nonsense</li><li>more nonsense</li></ul>");
 })();
 
 (function() {
@@ -14,7 +14,7 @@
   notelist.addNote("more nonsense");
   notelistview = new NoteListView(notelist);
 
-	assert.isTrue(notelistview.display() === "<ul><li>more nonsense...</li></ul>");
+	assert.isTrue(notelistview.display() === "<ul><li>more nonsense</li></ul>");
 })();
 
 (function() {
