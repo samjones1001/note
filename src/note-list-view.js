@@ -7,7 +7,7 @@
 
 function returnHTMLString()  {
   var string = "";
-  for (i = 0; i < this.view.length; i++){
+  for (var i = 0; i < this.view.length; i++){
     string += '<ul><li><div>' + this.view[i].displayNote() + '</div></li><li><div>'
   }
 return string;
