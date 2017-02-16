@@ -25,10 +25,10 @@
     NoteView.prototype.urlDisplay = function() {
       var notesUrl = "";
       this._listednotes.forEach(function(note) {
-        notesUrl += "<a href='http://localhost:8080#notes/" + note.id + "'" + ">" + note.text + "</a>"
+        notesUrl += "<li><a href='http://localhost:8080#notes/" + note.id + "'" + ">" + note.text.substring(0,19) + "</a></li>"
       })
       console.log(notesUrl);
-      return notesUrl;
+      return ("<ul>" + notesUrl + "</ul>");
     }
 
   exports.NoteView = NoteView;
