@@ -15,3 +15,15 @@ function CheckNoteControllerTakesNewList() {
 };
 
 CheckNoteControllerTakesNewList();
+
+function CheckNoteControllerCanDisplayURLlist() {
+	var newlist = new NoteList();
+	var controller = new NoteController(newlist);
+	newlist.AddNote("thistestsURLlinkdisplay");
+	controller.WebURLPost();
+	console.log(controller._view.urlDisplay())
+	assert.isTrue(document.body.innerHTML !== "<ul><li><a href='http://localhost:8080#notes/0'>thistestsURLlinkdis</a></li></ul>");
+
+};
+
+CheckNoteControllerCanDisplayURLlist();
