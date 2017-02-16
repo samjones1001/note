@@ -18,7 +18,6 @@
      this._listednotes.forEach(function(note) {
        limitedResult += '<li>' + note.text.substring(0,19) + '</li>'
      });
-     console.log(note.text.length);
      console.log(limitedResult);
      return ("<ul>" + limitedResult + "</ul>")
     }
