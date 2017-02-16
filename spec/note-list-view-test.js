@@ -27,3 +27,11 @@ function canFormatEmptyList() {
 };
 
 canFormatEmptyList()
+
+function returnTextWithTwentyChars() {
+	view = new NoteView;
+	view._list.AddNote('This string is longER THAN TWENTY CHARS');
+	assert.isTrue(view.limitedDisplay() === '<ul><li>This string is long</li></ul>');
+};
+
+returnTextWithTwentyChars()
