@@ -22,6 +22,15 @@
      return ("<ul>" + limitedResult + "</ul>")
     }
 
+    NoteView.prototype.urlDisplay = function() {
+      var notesUrl = "";
+      this._listednotes.forEach(function(note) {
+        notesUrl += "<a href='http://localhost:8080#notes/" + note.id + "'" + ">" + note.text + "</a>"
+      })
+      console.log(notesUrl);
+      return notesUrl;
+    }
+
   exports.NoteView = NoteView;
 
 })(this);

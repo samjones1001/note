@@ -13,6 +13,7 @@
       document.body.innerHTML = this._view.display();
   }
 
+
   exports.NoteController = NoteController;
 
 })(this);
