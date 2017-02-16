@@ -9,19 +9,20 @@
 	<div id="view"></div>
 	<div id="app">Hello</div>
 
-	<textarea rows="4" cols="50" name="notearea" form="text">
-		Enter text here...
-	</textarea>
+	<textarea rows="4" cols="50" name="notearea" form="text" placeholder="Enter text here..."></textarea>
 	<form id='text' method='post' action='#new'>
-		<input type='submit' value="Submit Note"/>
+	<input type='submit' value="Submit Note"/>
 	</form>
-
+</body>
 	
-
-	<script src="src/note-controller.js"></script>
 	<script src="src/note-model.js"></script>
 	<script src="src/note-list-model.js"></script>
 	<script src="src/note-list-view.js"></script>
 	<script src="src/single-note-view.js"></script>
-</body>
+	<script src="src/note-controller.js"></script>
+
+<script>
+var controller = new NoteController();
+</script>
+
 </html>

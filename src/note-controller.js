@@ -6,6 +6,7 @@
 		var controller = this;
 	};
 
+
 	NoteController.prototype.viewNotes = function() {
 		element = document.getElementById('app')
 		element.innerHTML = this._view.display();
@@ -15,6 +16,7 @@
 
 	makeUrlChangeShowNoteForCurrentPage();
 	listenForFormSubmit();
+
 
 	function makeUrlChangeShowNoteForCurrentPage() {
 		window.addEventListener("hashchange", showNoteForCurrentPage);
@@ -43,14 +45,15 @@
 	function listenForFormSubmit() {
 		document.getElementById('text').addEventListener("submit", function(submitEvent) {
 			submitEvent.preventDefault();
-			console.log(submitEvent.path[0][0].value);
-
+			controller._list.addNote(submitEvent.path[0][0].value);
+			controller.viewNotes()
 		});
 	}
 
-
-
 })(this);
+
+
+
 
 
 
