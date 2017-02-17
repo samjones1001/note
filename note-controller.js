@@ -22,7 +22,7 @@
   exports.NoteController = NoteController;
 
  makeUrlChangeShowNoteForCurrentPage();
- //listenForFormSubmit();
+ listenForFormSubmit();
 
   function makeUrlChangeShowNoteForCurrentPage() {
     //adds event listener for hashchange ie. on click
@@ -55,12 +55,13 @@
       }
  }
 
- // function listenForFormSubmit() {
- // 	  document.getElementById('text').addEventListener("submit", function(submitEvent) {
- // 		submitEvent.preventDefault();
- // 		controller._view._list.addNote(submitEvent.path[0][0].value);
- // 		controller._view._list.viewNote();
- // 	  });
- // }
+ function listenForFormSubmit() {
+ 	  document.getElementById('text').addEventListener("submit", function(submitEvent) {
+ 		 console.log(submitEvent)
+     submitEvent.preventDefault();
+ 		// controller._view._list.addNote(submitEvent.path[0][0].value);
+ 		// controller._view._list.viewNote();
+ 	  });
+ }
 
 })(this);
