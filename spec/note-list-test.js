@@ -21,4 +21,4 @@ function CheckNoteID() {
   assert.isTrue(notelist.notes[1].id === 1);
 };
 
-CheckNoteID()
+CheckNoteID();

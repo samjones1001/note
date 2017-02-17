@@ -25,9 +25,8 @@
     NoteView.prototype.urlDisplay = function() {
       var notesUrl = "";
       this._listednotes.forEach(function(note) {
-        notesUrl += "<li><a href='http://localhost:8080#notes/" + note.id + "'" + ">" + note.text.substring(0,19) + "</a></li>"
+        notesUrl += "<li><a href='#" + note.id + "'>" + note.text.substring(0,19) + "</a></li>"
       })
-      console.log(notesUrl);
       return ("<ul>" + notesUrl + "</ul>");
     }
 

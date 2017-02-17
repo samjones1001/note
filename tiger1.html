@@ -13,22 +13,26 @@
       makeUrlChangeShowAnimalForCurrentPage();
 
       function makeUrlChangeShowAnimalForCurrentPage() {
+      //adds event listener
         window.addEventListener("hashchange", showAnimalForCurrentPage);
       };
 
       function showAnimalForCurrentPage() {
         showAnimal(getAnimalFromUrl(window.location));
+    //goes to URL
       };
 
       function getAnimalFromUrl(location) {
         return location.hash.split("#")[1];
       };
-
+      //splits it at hash
+      
       function showAnimal(animal) {
         document
           .getElementById("animal")
           .innerHTML = animal;
       };
+      //goes to that div and inserts into innerHTML
     </script>
   </body>
 </html>

@@ -21,8 +21,18 @@ function CheckNoteControllerCanDisplayURLlist() {
 	var controller = new NoteController(newlist);
 	newlist.AddNote("thistestsURLlinkdisplay");
 	controller.WebURLPost();
-	assert.isTrue(controller._view.urlDisplay() === "<ul><li><a href='http://localhost:8080#notes/0'>thistestsURLlinkdis</a></li></ul>");
+	console.log(controller._view.urlDisplay())
+	assert.isTrue(controller._view.urlDisplay() === "<ul><li><a href='#0'>This string is long</a></li><li><a href='#1'>thistestsURLlinkdis</a></li></ul>");
 
 };
 
 CheckNoteControllerCanDisplayURLlist();
+
+
+// function ClickLinkChangesPage() {
+// 	var newlist = new NoteList();
+// 	var controller = new NoteController(newlist);
+// 	newlist.AddNote("thistestsURLlinkdisplay");
+// 	controller.WebURLPost();
+// 	//on click url goes to new page - how to identify link?
+//}
