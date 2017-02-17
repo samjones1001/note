@@ -57,10 +57,10 @@
 
  function listenForFormSubmit() {
  	  document.getElementById('text').addEventListener("submit", function(submitEvent) {
- 		 console.log(submitEvent)
+ 		 console.log(submitEvent.path[0][0].value)
      submitEvent.preventDefault();
- 		// controller._view._list.addNote(submitEvent.path[0][0].value);
- 		// controller._view._list.viewNote();
+ 		 controller._newList.AddNote(submitEvent.path[0][0].value);
+ 		 controller.WebURLPost();
  	  });
  }
 
